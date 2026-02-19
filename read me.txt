@@ -1,0 +1,25 @@
+HOBs - Matlab toolbox for for assessing high-order behaviours in multivariate system through the whole-minus-sum (WMS) metric computed using both predictability and information-theoretic measures within a nonlinear analytical framework.
+
+References:
+- C.Barà et al., “Investigating High-Order Behaviors in Multivariate Cardiovascular
+Interactions via Nonlinear Prediction and Information-Theoretic Tools”. Submitted to IEEE Transaction on Biomedical Engineering, 2026.
+- A. Porta et al., “Quantifying net synergy/redundancy of spontaneous variability regulation via predictability and transfer entropy decomposition frameworks,” IEEE Transactions on Biomedical Engineering, vol. 64, no. 11, pp. 2628–2638, 2017.
+- W. McGill, “Multivariate information transmission,” Transactions of the IRE Professional Group on Information Theory, vol. 4, no. 4, pp. 93–111, 1954.
+
+Demonstration scripts
+_____________________
+Simulation - Computation and statistical assessment of the predictability- and entropy-based WMS metrics for a single realization of the four simulation settings employed in the first reference (load data_sim.mat).  
+Application -  Computation and statistical assessment of the predictability- and entropy-based WMS metrics by accounting for 1) mean arterial pressure (MAP), diastolic arterial pressure (DAP) and systolic arterial pressure (SAP), and 2) diatolic arterial pressure (DAP), pre-ejection period (PEP), and left-ventricular ejection time (LVET) time series for a representative subject during supine rest condition (load physio_data_1subj.mat).
+
+Main computational functions
+_____________________________
+HOBs_prediction - Compute WMS via predictability measures.
+HOBs_entropy - Compute WMS via entropy measures.
+
+Other functions
+________________
+AR_filter - Filter a vector noise with a specified AR model
+nonlin_loclin_pred - Compute prediction error time series by using a local linear estimation strategy.
+lrp_LinRegStatic - Perform linear regression through least squares model identification.
+MIknn - Compute MI terms through nearest-neighbot estimation strategy between the variables in the first column and the other two both jointly and separately.
+nn_search, nn_prepare, range_search - mex functions for nearest neighbors searching and counting
